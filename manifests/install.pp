@@ -1,4 +1,4 @@
-# = Class postfwd::install
+# == Class postfwd::install
 #
 class postfwd::install {
   package { $::postfwd::pkg_list:

@@ -1,14 +1,14 @@
-# = Define: postfwd::script
+# == Define: postfwd::script
 #
-# == Parameters:
+# === Parameters:
 #
-# $action     PostFWD action rule.
+# $action::   PostFWD action rule.
 #
-# $policy     PostFWD policy rule.
+# $policy::   PostFWD policy rule.
 #
-# $ensure     Default: present
+# $ensure::   Default: present
 #
-# $order      Default: '02'
+# $order::    Default: '02'
 #
 define postfwd::rule (
   $action,

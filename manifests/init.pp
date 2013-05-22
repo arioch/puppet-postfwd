@@ -1,4 +1,56 @@
-# = Class postfwd
+# == Class postfwd
+#
+# === Parameters:
+#
+# $config_file::          Location of the main configuration file.
+#                         Default: operating specific.
+#
+# $config_file_mode::     Posix file mode for configuration files.
+#                         Default: 0644.
+#
+# $config_group::         Posix group for configuration files.
+#                         Default: operating specific.
+#
+# $config_user::          Posix user for configuration files.
+#                         Default: operating specific.
+#
+# $daemon_group::         Unprivileged group to run daemon.
+#                         Default: operating specific.
+#
+# $daemon_user::          Unprivileged user to run daemon.
+#                         Default: operating specific.
+#
+# $listen_address::       Which address to bind the daemon to.
+#                         Default: 127.0.0.1.
+#
+# $listen_port::          Which port to bind the daemon to.
+#                         Default: 10040.
+#
+# $pkg_deps::             Any dependencies that need to be resolved before
+#                         installing the main package.
+#                         Default: operating specific.
+#
+# $pkg_ensure::           Ensure state for packages.
+#                         Default: present.
+#
+# $pkg_list::             An array containing the main package and possibly
+#                         a number of dependencies.
+#                         Default: operating specific.
+#
+# $service_enable::       Enable/disable the daemon at boot time.
+#                         Default: true.
+#
+# $service_ensure::       Ensure daemon state.
+#                         Default: running.
+#
+# $service_hasrestart::   Specify whether or not the init script has restart.
+#                         Default: operating specific.
+#
+# $service_hasstatus::    Specify whether or not the init script has status.
+#                         Default: operating specific.
+#
+# $service_name::         Specify the name of the init script.
+#                         Default: operating specific.
 #
 class postfwd (
   $config_file        = $postfwd::params::config_file,
