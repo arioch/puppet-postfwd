@@ -2,7 +2,13 @@
 #
 # == Parameters:
 #
+# $action     PostFWD action rule.
+#
+# $policy     PostFWD policy rule.
+#
 # $ensure     Default: present
+#
+# $order      Default: '02'
 #
 define postfwd::rule (
   $action,
