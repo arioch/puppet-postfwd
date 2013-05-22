@@ -7,6 +7,8 @@ class postfwd (
   $config_user        = $postfwd::params::config_user,
   $daemon_group       = $postfwd::params::daemon_group,
   $daemon_user        = $postfwd::params::daemon_user,
+  $listen_address     = $postfwd::params::listen_address,
+  $listen_port        = $postfwd::params::listen_port,
   $pkg_deps           = $postfwd::params::pkg_deps,
   $pkg_ensure         = $postfwd::params::pkg_ensure,
   $pkg_list           = $postfwd::params::pkg_list,

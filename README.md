@@ -17,8 +17,8 @@
 
     node /box/ {
       class { 'postfwd':
-        daemon_user  => 'postfw',
-        daemon_group => 'postfw',
+        listen_address => '127.0.0.1',
+        listen_port    => '10040',
       }
     }
 

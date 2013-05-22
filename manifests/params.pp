@@ -1,6 +1,9 @@
 # = Class postfwd::params
 #
 class postfwd::params {
+  $listen_address = '127.0.0.1'
+  $listen_port    = '10040'
+
   case $::osfamily {
     'RedHat': {
       $config_file        = '/etc/postfix/postfwd.cf'
