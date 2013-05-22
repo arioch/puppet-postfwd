@@ -9,8 +9,14 @@ class postfwd::config {
     mode    => $::postfwd::config_file_mode,
   }
 
-  file { $::postfwd::config_file:
-    ensure => present,
+  #file { $::postfwd::config_file:
+  #  ensure => present,
+  #}
+
+  concat { $::postfwd::config_file:
+    owner => $::postfwd::config_user,
+    group => $::postfwd::config_group,
+    mode  => $::postfwd::config_file_mode,
   }
 }
 
