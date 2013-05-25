@@ -7,6 +7,7 @@ facterversion = ENV.key?('FACTER_VERSION') ? "= #{ENV['FACTER_VERSION']}" : ['>=
 gem 'facter', facterversion
 
 gem 'rake'
+gem 'rspec'
 gem 'puppet-lint', '>=0.3.2'
 gem 'rspec-puppet', '>=0.1.6'
 gem 'librarian-puppet', '>=0.9.9'
