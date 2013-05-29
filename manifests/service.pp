@@ -1,4 +1,4 @@
-# == Class postfwd::service
+# == Class: postfwd::service
 #
 class postfwd::service {
   service { $::postfwd::service_name:

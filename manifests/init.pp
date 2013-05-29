@@ -1,4 +1,4 @@
-# == Class postfwd
+# == Class: postfwd
 #
 # === Parameters:
 #

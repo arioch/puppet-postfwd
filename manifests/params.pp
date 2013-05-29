@@ -1,4 +1,4 @@
-# == Class postfwd::params
+# == Class: postfwd::params
 #
 class postfwd::params {
   $listen_address = '127.0.0.1'

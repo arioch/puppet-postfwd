@@ -1,4 +1,4 @@
-# == Class postfwd::config
+# == Class: postfwd::config
 #
 class postfwd::config {
   File {
