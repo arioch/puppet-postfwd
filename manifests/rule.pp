@@ -15,10 +15,11 @@ define postfwd::rule (
   $policy,
   $ensure = present,
   $order  = '02',
+  $target = $postfwd::config_file,
 ) {
   concat::fragment { "postfwd_rule_${name}":
     ensure  => $ensure,
-    target  => $postfwd::config_file,
+    target  => $target,
     content => template('postfwd/rule.erb'),
     order   => $order,
   }
