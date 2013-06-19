@@ -1,5 +1,9 @@
 # Puppet PostFWD
 
+## Build status
+
+[![Build Status](https://travis-ci.org/arioch/puppet-postfwd.png?branch=master)](https://travis-ci.org/arioch/puppet-postfwd)
+
 ## Requirements
 
 * [concat module](https://github.com/ripienaar/puppet-concat)
