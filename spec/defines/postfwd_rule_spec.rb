@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'postfwd::rule', :type => :define do
   let (:pre_condition) { '$concat_basedir = "/tmp"' }
 
-  context 'on Debian without parameters' do
+  context 'without parameters' do
     let (:facts) { debian_facts }
     let (:title) { '_VALUE_' }
 
@@ -12,7 +12,7 @@ describe 'postfwd::rule', :type => :define do
     end
   end
 
-  context 'on Debian with parameter: action' do
+  context 'with parameter: action' do
     let (:facts) { debian_facts }
     let (:title) { '_NAME_' }
     let (:params) { { :action => '_ACTION_' } }
@@ -22,7 +22,7 @@ describe 'postfwd::rule', :type => :define do
     end
   end
 
-  context 'on Debian with parameter: policy' do
+  context 'with parameter: policy' do
     let (:facts) { debian_facts }
     let (:title) { '_NAME_' }
     let (:params) { { :policy => '_POLICY_' } }
@@ -32,7 +32,7 @@ describe 'postfwd::rule', :type => :define do
     end
   end
 
-  context 'on Debian with parameter: order' do
+  context 'with parameter: order' do
     let (:facts) { debian_facts }
     let (:title) { '_NAME_' }
     let (:params) { { :order => '_ORDER_' } }
@@ -42,7 +42,7 @@ describe 'postfwd::rule', :type => :define do
     end
   end
 
-  context 'on Debian with parameter: target' do
+  context 'with parameter: target' do
     let (:facts) { debian_facts }
     let (:title) { '_NAME_' }
     let (:params) { { :target => '_TARGET_' } }
@@ -52,7 +52,7 @@ describe 'postfwd::rule', :type => :define do
     end
   end
 
-  context 'on Debian with parameters' do
+  context 'with parameters' do
     let (:facts) { debian_facts }
     let (:title) { '_NAME_' }
     let (:params) {
