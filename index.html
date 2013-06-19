@@ -28,22 +28,32 @@
         </ul>
       </header>
       <section>
-        <h1>Puppet PostFWD</h1>
+        <h1>
+<a name="puppet-postfwd" class="anchor" href="#puppet-postfwd"><span class="octicon octicon-link"></span></a>Puppet PostFWD</h1>
 
-<h2>Requirements</h2>
+<h2>
+<a name="build-status" class="anchor" href="#build-status"><span class="octicon octicon-link"></span></a>Build status</h2>
+
+<p><a href="https://travis-ci.org/arioch/puppet-postfwd"><img src="https://travis-ci.org/arioch/puppet-postfwd.png?branch=master" alt="Build Status"></a></p>
+
+<h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
 <ul>
 <li><a href="https://github.com/ripienaar/puppet-concat">concat module</a></li>
-</ul><h2>Example usage</h2>
+</ul><h2>
+<a name="example-usage" class="anchor" href="#example-usage"><span class="octicon octicon-link"></span></a>Example usage</h2>
 
-<h3>Install PostFWD</h3>
+<h3>
+<a name="install-postfwd" class="anchor" href="#install-postfwd"><span class="octicon octicon-link"></span></a>Install PostFWD</h3>
 
 <pre><code>node /box/ {
   include postfwd
 }
 </code></pre>
 
-<h3>Configure PostFWD</h3>
+<h3>
+<a name="configure-postfwd" class="anchor" href="#configure-postfwd"><span class="octicon octicon-link"></span></a>Configure PostFWD</h3>
 
 <pre><code>node /box/ {
   class { 'postfwd':
@@ -53,7 +63,8 @@
 }
 </code></pre>
 
-<h3>Add rules</h3>
+<h3>
+<a name="add-rules" class="anchor" href="#add-rules"><span class="octicon octicon-link"></span></a>Add rules</h3>
 
 <pre><code>postfwd::rule { 'Rate limit':
   policy =&gt; 'sender_domain=example.org',
