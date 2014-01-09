@@ -36,16 +36,16 @@ describe 'postfwd', :type => :class do
 
   describe 'with parameter: config_file' do
     let (:facts) { debian_facts }
-    let (:params) { { :config_file => '_VALUE_' } }
+    let (:params) { { :config_file => '/config/file' } }
 
-    it { should contain_file('_VALUE_').with_ensure('present') }
+    it { should contain_file('/config/file').with_ensure('present') }
   end
 
   describe 'with parameter: config_file_mode' do
     let (:facts) { debian_facts }
-    let (:params) { { :config_file_mode => '_VALUE_' } }
+    let (:params) { { :config_file_mode => '0777' } }
 
-    it { should contain_file('/etc/postfix/postfwd.cf').with_mode('_VALUE_') }
+    it { should contain_file('/etc/postfix/postfwd.cf').with_mode('0777') }
   end
 
   describe 'with parameter: config_group' do
